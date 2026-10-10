@@ -1,0 +1,21 @@
+﻿name: PerWorldChat
+version: 1.3.1
+main: lol.hyper.perworldchat.PerWorldChat
+api-version: '26.1.1'
+load: STARTUP
+author: hyperdefined
+website: https://codeberg.org/hyperdefined/PerWorldChat
+description: Separate chat between worlds.
+folia-supported: true
+
+loader: lol.hyper.perworldchat.PerWorldChatLoader
+
+commands:
+  worlds:
+    usage: /worlds
+
+permissions:
+  perworldchat.admin:
+    description: Allows managing world chat groups with /worlds.
+    default: op
+

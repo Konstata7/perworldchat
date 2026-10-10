@@ -1,0 +1,31 @@
+# PerWorldChat
+#
+# By default a chat message is only sent to players in the same world.
+# To let players in several worlds share one chat, group those worlds
+# together under "world-groups".
+#
+# Every world may belong to only one group. Group names are arbitrary and
+# only used for display. Worlds that are not listed here keep their own
+# separate chat.
+#
+# Groups can also be managed in game (requires perworldchat.admin):
+#   /worlds group <name> <world...>   create/replace a group
+#   /worlds ungroup <world>           remove a world from its group
+#   /worlds delete <group>            delete a group
+#   /worlds reload                    reload this file
+#   /worlds                           list worlds and groups
+#
+# Example:
+#   world-groups:
+#     global:
+#       - world
+#       - world_nether
+#       - world_the_end
+#     survival:
+#       - survival
+#       - survival_nether
+world-groups: {}
+
+# If true, advancement/achievement announcements are only shown to players
+# in the same world (or group) as the player who earned the advancement.
+separate-advancements: true
